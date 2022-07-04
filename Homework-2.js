@@ -48,6 +48,6 @@ let indexof_Body_IgnoreCase = sentence3.indexOf('bOdY');
 const sentence3_Last_Character = sentence3.charAt(sentence3.length - 1);
 console.log(`The last character in sentence 3: ${sentence3_Last_Character}`);
 
-let sentence3_Contains_Body_Once = sentence3.includes('bOdY', 1);
-console.log(`\nbOdY -> ${sentence3_Contains_Body_Once}`);
-console.log(`is ${sentence3_Contains_Body_Once} contains with 'bOdY' : ${sentence3_Contains_Body_Once}`);
+let sentence3_LastIndexOfBody = sentence3.lastIndexOf('bOdY');
+let sentence3_bOdY_once = sentence3_LastIndexOfBody == indexof_Body_IgnoreCase;
+console.log(`Does ${sentence3} include bOdY once : ${sentence3_bOdY_once}`);
